@@ -1,0 +1,51 @@
+.card {
+    padding: 30px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.card p, h4 {
+    color: #080444;
+}
+
+.card img {
+    max-width: 50%;
+}
+
+button{
+    margin-top: 10px;
+    padding: 8px 12px;
+    color: #d3ba2b;
+    background: #080444;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(1, 0, 8, 0.3);
+}
+
+button.column {
+    margin: 2% 5%;
+}
+
+.answer {
+    background: #a9d89f;
+    color: #080444;
+}
+
+.answer::before {
+    content: "📌";
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        padding: 30px;
+        margin: 10px auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+}

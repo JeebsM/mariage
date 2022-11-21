@@ -1,0 +1,37 @@
+/* gallery */
+#coulisses {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    min-height: 80%;
+    background-color: #080444;
+}
+
+.img-resize {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin: 5px;
+    color: #d3ba2b;
+}
+
+button{
+    margin-top: 10px;
+    padding: 8px 12px;
+    color: #080444;
+    background: #d3ba2b;
+    border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(1, 0, 8, 0.3);
+}
+
+button.column {
+    margin: 2% 5%;
+}

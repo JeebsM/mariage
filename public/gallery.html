@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Joy&JB se marient - Les coulisses</title>
+    <link rel="shortcut icon" href="media/celebration.svg">
+    <!-- stylesheets -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/gallery.css">
+  </head>
+
+  <body>
+
+    <!-- Auth modals -->
+    <authentication-modal></authentication-modal> 
+
+    <header>
+      <navigation-menu></navigation-menu>
+    </header>
+
+    <div class="comZone hidden">This is the communication zone.</div>
+    
+    <section>
+      <div id="coulisses"></div>
+      <div class="row">
+        <button id="previousImageButton" class="column previous"><i class="material-icons icon md-dark">navigate_before</i></button>
+        <button id="nextImageButton" class="column next"><i class="material-icons icon md-dark">navigate_next</i></button>
+      </div>
+    </section>    
+    
+  </body>
+
+  <script src="js/common.bundle.js"></script>
+  <script src="js/gallery.bundle.js"></script>
+
+</html>

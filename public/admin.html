@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Joy&JB se marient - Les coulisses</title>
+    <link rel="shortcut icon" href="media/celebration.svg">
+    <!-- stylesheets -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/admin.css">
+  </head>
+
+  <body>
+
+    <!-- Auth modals -->
+    <authentication-modal></authentication-modal> 
+
+    <header>
+      <navigation-menu></navigation-menu>
+    </header>
+
+    <div class="comZone hidden">This is the communication zone.</div>
+
+    <section id="uploadLog" class="admin witness">
+        <details>
+            <summary>Ajouter un log</summary>
+            <form id="createRecordForm">
+                <select name="type" placeholder="Type de log">
+                    <option value="behind">Coulisses</option>
+                    <option value="kikadi">Qui a dit?</option>
+                    <option value="quizz">Quiz</option>
+                </select>
+                <input type="text" name="title" placeholder="Titre">
+                <textarea type="" name="legend" placeholder="Ecris le texte du log ici"></textarea>
+                <input type="datetime-local" name="date">
+                <input type="text" name="like" class="hidden" id="" disabled>
+                <input type="text" name="black" class="hidden" id="" disabled>
+                <input type="text" name="white" class="hidden" id="" disabled>
+                <input type="file" name="picture">
+                <button id="createRecordButton"> Create Record</button> 
+            </form>
+        </details>
+    </section>
+
+    <section id="userForm" style="display:flex;">
+        <details>
+            <summary>Editer mon profil</summary>
+            <form id="editUserForm">
+              <input id="user_id_input" type="text" class="hidden" name="user_id" disabled>
+              <input id="surname_input" type="text" name="surname" placeholder="Prénom">
+              <input id="family_input" type="text" name="family" placeholder="Nom de famille">
+              <input id="mail_input" type="mail" name="mail" placeholder="Email">
+              <div class="form-group">
+                <label># Adultes</label>
+                <input id="adult_input" type="number" name="adult" placeholder="0" min="0">
+              </div>
+              <div class="form-group">
+                <label># Enfants</label>
+                <input id="child_input" type="number" name="child" placeholder="0" min="0">
+              </div>
+              <button id="editUserButton"> Sauver</button> 
+          </form>
+        </details>
+    </section>
+
+    <section id="editInvitation" class="admin">
+        <details>
+            <summary>Editer l'invitation</summary>
+            <p>TO DO</p>
+        </details>
+    </section>
+    
+  </body>
+
+  <script src="js/common.bundle.js"></script>
+  <script src="js/admin.bundle.js"></script>
+
+</html>

@@ -1,0 +1,49 @@
+
+details{
+    width: 100%;
+    padding: 10px;
+    margin: 5px auto;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+summary{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+details summary::before { 
+    content: "📸"; 
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.4s ease-out;
+}
+details[open] summary::before {
+    transform: rotate(360deg);
+}
+details p {
+    text-align: left;
+}
+
+.form-group{
+    display:flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.1);
+    margin: 0px 0px 5px 0px;
+    padding: 0px 10px;
+    min-height:50px;
+}
+.form-group label{
+    font-size:0.8em;
+    padding: 0px 0px 0px 10px;
+}
+.form-group input{
+    display: flex;
+    margin: 8px 0;
+    padding: 8px 2px;
+    border-width: 0 0 2px 0;
+    width: 60%;
+}
